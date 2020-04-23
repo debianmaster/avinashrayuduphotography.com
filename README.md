@@ -1,4 +1,4 @@
-![Photo Stream Social Preview](https://repository-images.githubusercontent.com/244708193/8710f480-6010-11ea-9fd6-41bdaea7ab02)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/47931d65-3b83-43e5-a2c7-53bc8944e223/deploy-status)](https://app.netlify.com/sites/avinashrayuduphotography/deploys)
 
 # Photo Stream
 
