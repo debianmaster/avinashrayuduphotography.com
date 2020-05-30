@@ -8,12 +8,14 @@ RUN wget -O ./vips-$VIPSVER.tar.gz https://github.com/libvips/libvips/releases/d
 
 RUN tar -xvzf ./vips-$VIPSVER.tar.gz && cd vips-$VIPSVER && ./configure && make && make install
 
-COPY ./ /photo-stream 
+COPY ./Gemfile /photo-stream/Gemfile 
 
 WORKDIR /photo-stream
 
 RUN ruby -v && gem install bundler jekyll && bundle install
 
+COPY ./ /photo-stream/
+ 
 EXPOSE 4000
 
 ENTRYPOINT bundle exec jekyll serve
